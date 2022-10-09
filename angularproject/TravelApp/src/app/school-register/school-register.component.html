@@ -1,0 +1,186 @@
+
+<body>
+  <mat-tab-group mat-align-tabs="start">
+    <mat-tab label="STUDENT">
+    <div class="container">
+      <div class="title">Student details</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Student Name</span>
+              <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Father Name</span>
+              <input type="text" placeholder="Enter your father name" required>
+            </div>
+           
+            <div class="input-box">
+                <span class="details">Date Of Birth</span>
+                <input type="date" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Age</span>
+                <mat-slider
+                thumbLabel
+                tickInterval="50"
+                step="1"
+                min="0"
+                max="50"
+                aria-label="units"></mat-slider>
+            </div>
+            <div class="input-box">
+              <span class="details">Mobile</span>
+              <input type="number" placeholder="Enter mobile number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">E-Mail</span>
+              <input type="text" placeholder="Enter email address" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Father's occupation</span>
+              <input type="text" placeholder="Enter occupation" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Student Address</span>
+              <textarea id="address" name="address"  placeholder="enter student address" required></textarea>
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
+    </mat-tab>
+
+    <mat-tab label="SCHOOL">
+      <div class="container">
+      <div class="title">School details</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Student Class</span>
+              <input type="number" placeholder="Enter student class" min="1" max="12" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Section</span>
+              <select id="section" name="section">
+                <option selected disabled="disabled">select</option>
+                 <option value="A">A</option>
+                 <option value="B">B</option>
+                 <option value="C">C</option>
+                 <option value="D">D</option>
+            </select>
+            </div>
+            <div class="input-box">
+              <span class="details">Roll Number</span>
+              <input type="number" placeholder="Enter class"  required>
+            </div>
+            <div class="input-box">
+                <span class="details">Class Incharge</span>
+                <input type="text" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+              <span class="details">School</span>
+              <input type="text" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+              <span class="details">School Address</span>
+              <textarea id="address" name="address"  placeholder="enter student address" required></textarea>
+            </div>
+            <div class="input-box">
+              <span class="details">School Mobile Number</span>
+              <input type="number" placeholder="Enter mobile number"  required>
+            </div>
+            <div class="input-box">
+              <span class="details">School Mail ID</span>
+              <input type="number" placeholder="Enter mail id"  required>
+            </div>
+          </div>
+          
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="VAN">
+    <div class="container">
+      <div class="title">Van details</div>
+      <div class="content">
+        <form action="#">
+
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Van Number</span>
+              <input type="number" placeholder="Enter van number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Van Fees</span>
+              <input type="number" placeholder="Enter van number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Van Driver</span>
+              <input type="text" placeholder="Enter van number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Van Driver Mobile Number</span>
+              <input type="number" placeholder="Enter van number" required>
+            </div>
+          </div>
+
+          <div class="title" style="font-size:20px;">Morning</div>
+
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Pick UP</span>
+              <input type="text" placeholder="Enter your father name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Drop</span>
+              <input type="text" placeholder="Enter class" min="1" max="12" required>
+            </div>
+          </div>
+
+          <div class="title" style="font-size: 20px;">Evening</div>
+
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Pick UP</span>
+              <input type="text" placeholder="Enter your father name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Drop</span>
+              <input type="text" placeholder="Enter class" min="1" max="12" required>
+            </div>
+          </div>
+          
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div></mat-tab>
+  </mat-tab-group>
+  </body>
+  

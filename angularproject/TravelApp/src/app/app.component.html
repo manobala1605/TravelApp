@@ -1,0 +1,115 @@
+
+<!--TOOLBAR-->
+<p>
+    <mat-toolbar color="primary" class="mat-elevation-z5">
+        
+      <span class="title"><mat-icon class="icon">directions_bus</mat-icon> MANO TRAVELS</span>
+      <!-- <span><img [src]="assets/travelslogo.jpeg" alt="logo"></span> -->
+      <span class="spacer"></span>
+      <button mat-icon-button class="account-icon" matTooltip="PROFILE">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <button mat-icon-button class="home-icon" matTooltip="HOME" >
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-icon-button class="feedback-icon" matTooltip="FEEDBACK" >
+        <mat-icon>feedback</mat-icon>
+      </button>
+      <button mat-icon-button class="info-icon" matTooltip="ABOUT US">
+        <mat-icon>info</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+
+  <!--SIDE NAVIGATION button-->
+  <div class="sidenav-content" opened>
+    <button type="button" mat-icon-button (click)="drawer.toggle()" style="margin-top:550px;border: 0px;" >
+      <mat-icon>last_page</mat-icon>
+    </button>
+  </div>
+
+  <!--SIDE NAVIGATION-->
+  <mat-sidenav-container autosize style="margin-top:-112px;margin-left: 35px;">
+    <mat-sidenav mode="side" #drawer>
+      <mat-nav-list>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-card class="card">
+                  <a mat-list-item>HOME</a>
+                </mat-card>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+              <mat-card class="card"><a mat-list-item routerLink='Travels-Home'>HOME</a></mat-card>
+              <mat-card class="card"><a mat-list-item>BOOKINGS</a></mat-card>
+             </mat-nav-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header >
+              <mat-panel-title>
+                <mat-card class="card">
+                  <a mat-list-item>SCHOOL VANS</a>
+                </mat-card>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+              <mat-card class="card"><a mat-list-item style="border-radius: 30px;" routerLink='School-Register'>REGISTER</a></mat-card>
+              <mat-card class="card"><a mat-list-item>AVAILABILITY</a></mat-card>
+             </mat-nav-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-card class="card">
+                   <a mat-list-item >TRAVEL VANS</a>
+                </mat-card>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+              <mat-card class="card"><a mat-list-item routerLink='Travel-Van-Booking'>BOOKING</a></mat-card>
+              <mat-card class="card"><a mat-list-item>AVAILABILITY</a></mat-card>
+             </mat-nav-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-card class="card">
+                   <a mat-list-item >CARS</a>
+                </mat-card>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+              <mat-card class="card"><a mat-list-item routerLink='Car-Booking'>BOOKING</a></mat-card>
+              <mat-card class="card"><a mat-list-item>AVAILABILITY</a></mat-card>
+             </mat-nav-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-nav-list>
+          <a mat-list-item><button mat-button class="button2">PROFILE</button></a>
+          <a mat-list-item><button mat-button class="button2">BOOKINGS</button></a>
+          <a mat-list-item><button mat-button class="button2">ABOUT US</button></a>
+          <a mat-list-item><button mat-button class="button2">HELP</button></a>
+          <a mat-list-item><button mat-button class="button2">LOG-OUT</button></a>
+         </mat-nav-list>
+
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div>
+        <p style="height: 88vh;background-color: whitesmoke;"><router-outlet></router-outlet></p>
+      </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
