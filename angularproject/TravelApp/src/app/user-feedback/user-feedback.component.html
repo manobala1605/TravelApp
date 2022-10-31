@@ -1,0 +1,10 @@
+<h1>FEED-BACK</h1>
+<h3>Comment your feddback or complaints</h3>
+<div class="container">
+    <label for="feedback"></label>
+    <textarea id="address" name="address"  placeholder="enter your feedback here..." required></textarea>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close type="reset" (click)="openSnackBar('cancelled','dismiss')">CANCEL</button>
+    <button mat-raised-button mat-dialog-close cdkFocusInitial type="submit" id="submit" class="submit" (click)="openSnackBar('Feedback Submitted','dismiss')">SUBMIT</button>
+</div>

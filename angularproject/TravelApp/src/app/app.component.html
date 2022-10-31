@@ -6,21 +6,24 @@
       <span class="title"><mat-icon class="icon">directions_bus</mat-icon> MANO TRAVELS</span>
       <!-- <span><img [src]="assets/travelslogo.jpeg" alt="logo"></span> -->
       <span class="spacer"></span>
-      <button mat-icon-button class="account-icon" matTooltip="PROFILE">
-        <mat-icon>account_circle</mat-icon>
+      <button mat-icon-button class="account-icon" matTooltip="PROFILE" ><a  routerLink='User-Profile'>
+        <mat-icon>account_circle</mat-icon></a>
       </button>
-      <button mat-icon-button class="home-icon" matTooltip="HOME" >
-        <mat-icon>home</mat-icon>
+      <button mat-icon-button class="home-icon" matTooltip="HOME"><a routerLink='Travels-Home' >
+        <mat-icon>home</mat-icon></a>
       </button>
-      <button mat-icon-button class="feedback-icon" matTooltip="FEEDBACK" >
+     
+      <button mat-icon-button class="feedback-icon" matTooltip="FEEDBACK" (click)="openDialogBox()">
         <mat-icon>feedback</mat-icon>
       </button>
-      <button mat-icon-button class="info-icon" matTooltip="ABOUT US">
+      <button mat-icon-button class="info-icon" matTooltip="ABOUT US" (click)="openDialog()">
         <mat-icon>info</mat-icon>
       </button>
     </mat-toolbar>
   </p>
-
+  
+  <p><router-outlet></router-outlet></p>
+  <p><router-outlet></router-outlet></p>
   <!--SIDE NAVIGATION button-->
   <div class="sidenav-content" opened>
     <button type="button" mat-icon-button (click)="drawer.toggle()" style="margin-top:550px;border: 0px;" >
@@ -97,7 +100,7 @@
         </mat-accordion>
 
         <mat-nav-list>
-          <a mat-list-item><button mat-button class="button2">PROFILE</button></a>
+          <a mat-list-item><button mat-button class="button2" (click)="openBottomSheet()">PROFILE</button></a>
           <a mat-list-item><button mat-button class="button2">BOOKINGS</button></a>
           <a mat-list-item><button mat-button class="button2">ABOUT US</button></a>
           <a mat-list-item><button mat-button class="button2">HELP</button></a>

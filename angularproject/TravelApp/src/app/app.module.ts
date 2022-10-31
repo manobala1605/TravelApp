@@ -18,18 +18,27 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 import { SchoolRegisterComponent } from './school-register/school-register.component';
 import { HomeTravelsComponent } from './home-travels/home-travels.component';
 import { TravelRegisterComponent } from './travel-register/travel-register.component';
 import { CarBookingComponent } from './car-booking/car-booking.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { UserFeedbackComponent } from './user-feedback/user-feedback.component';
 
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 const routes: Routes = [
   {path:'School-Register',component:SchoolRegisterComponent},
   {path:'Travels-Home',component:HomeTravelsComponent},
   {path:'Travel-Van-Booking',component:TravelRegisterComponent},
+  {path:'User-Profile',component:UserProfileComponent},
   {path:'Car-Booking',component:CarBookingComponent}
 ];
 
@@ -40,8 +49,12 @@ const routes: Routes = [
     SchoolRegisterComponent,
     HomeTravelsComponent,
     TravelRegisterComponent,
-    CarBookingComponent
+    CarBookingComponent,
+    UserProfileComponent,
+    AboutUsComponent,
+    UserFeedbackComponent
   ],
+  entryComponents:[AboutUsComponent,UserFeedbackComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -54,7 +67,7 @@ const routes: Routes = [
     MatGridListModule,
     MatExpansionModule,MatListModule,RouterModule.forRoot(routes),
     MatFormFieldModule,MatSelectModule,FormsModule,ReactiveFormsModule,MatProgressSpinnerModule,
-    MatTabsModule,MatSliderModule
+    MatTabsModule,MatSliderModule,MatBottomSheetModule,MatDialogModule,MatSnackBarModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
