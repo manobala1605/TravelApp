@@ -31,6 +31,7 @@ import { CarBookingComponent } from './car-booking/car-booking.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { UserFeedbackComponent } from './user-feedback/user-feedback.component';
+import { SchoolvanAvailableComponent } from './schoolvan-available/schoolvan-available.component';
 
 
 
@@ -39,7 +40,9 @@ const routes: Routes = [
   {path:'Travels-Home',component:HomeTravelsComponent},
   {path:'Travel-Van-Booking',component:TravelRegisterComponent},
   {path:'User-Profile',component:UserProfileComponent},
-  {path:'Car-Booking',component:CarBookingComponent}
+  {path:'Car-Booking',component:CarBookingComponent},
+  {path:'schoolvan-available',component:SchoolvanAvailableComponent}
+
 ];
 
 
@@ -52,7 +55,8 @@ const routes: Routes = [
     CarBookingComponent,
     UserProfileComponent,
     AboutUsComponent,
-    UserFeedbackComponent
+    UserFeedbackComponent,
+    SchoolvanAvailableComponent,
   ],
   entryComponents:[AboutUsComponent,UserFeedbackComponent],
   imports: [

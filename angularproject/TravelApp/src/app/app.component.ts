@@ -20,7 +20,19 @@ export class AppComponent {
   constructor(private _bottomSheet: MatBottomSheet,public dialog: MatDialog) {}
 
   openBottomSheet(): void {
-    this._bottomSheet.open(BottomSheetOverviewSheet);
+    this._bottomSheet.open(UserProfileComponent);
+  }
+
+  openBottomSheet1(): void {
+    this._bottomSheet.open(UserProfileComponent);
+  }
+
+  openBottomSheet2(): void {
+    this._bottomSheet.open(AboutUsComponent);
+  }
+
+  openBottomSheet3(): void {
+    this._bottomSheet.open(UserProfileComponent);
   }
 
   openDialog() {

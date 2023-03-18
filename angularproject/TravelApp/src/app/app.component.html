@@ -62,7 +62,7 @@
             </mat-expansion-panel-header>
             <mat-nav-list>
               <mat-card class="card"><a mat-list-item style="border-radius: 30px;" routerLink='School-Register'>REGISTER</a></mat-card>
-              <mat-card class="card"><a mat-list-item>AVAILABILITY</a></mat-card>
+              <mat-card class="card"><a mat-list-item routerLink='schoolvan-available'>AVAILABILITY</a></mat-card>
              </mat-nav-list>
           </mat-expansion-panel>
         </mat-accordion>
@@ -101,9 +101,9 @@
 
         <mat-nav-list>
           <a mat-list-item><button mat-button class="button2" (click)="openBottomSheet()">PROFILE</button></a>
-          <a mat-list-item><button mat-button class="button2">BOOKINGS</button></a>
-          <a mat-list-item><button mat-button class="button2">ABOUT US</button></a>
-          <a mat-list-item><button mat-button class="button2">HELP</button></a>
+          <a mat-list-item><button mat-button class="button2" (click)="openBottomSheet1()">BOOKINGS</button></a>
+          <a mat-list-item><button mat-button class="button2" (click)="openBottomSheet2()">ABOUT US</button></a>
+          <a mat-list-item><button mat-button class="button2" (click)="openBottomSheet3()">HELP</button></a>
           <a mat-list-item><button mat-button class="button2">LOG-OUT</button></a>
          </mat-nav-list>
 
